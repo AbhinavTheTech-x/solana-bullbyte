@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "OpenSauceRegular";
+  src: url("./fonts/OpenSauceOne-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSauceMedium";
+  src: url("./fonts/OpenSauceOne-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSauceBold";
+  src: url("./fonts/OpenSauceSans-Bold.woff") format("woff");
+}
+
+.hover-border {
+  transition: border-width 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+    border-color 0.4s ease;
+}
+
+.hover-border:hover {
+  border-width: 2.2px 2.2px 8px 2.2px;
+  border-style: solid;
+  border-color: #6c57ee;
+}
+.btn-gradient-border {
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(white, white),
+    linear-gradient(271.37deg, #573cff -9.08%, #b06ab3 48.83%);
+}
+.accordion > h2 > button {
+  justify-content: space-between;
+  padding: 0.9rem;
+  text-align: left;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes infinite-scroll-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+@keyframes infinite-scroll-3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: 400%;
+  animation: infinite-scroll 30s linear infinite;
+}
+.animate-infinite-scroll-3 {
+  display: flex;
+  width: 400%;
+  animation: infinite-scroll-3 60s linear infinite;
+}
+
+.animate-infinite-scroll-2 {
+  display: flex;
+  width: 400%;
+  animation: infinite-scroll-2 30s linear infinite;
+}
+/* 
+.goog-logo-link,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:link,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:visited,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:hover,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:active {
+  display: none !important;
+}
+.goog-te-gadget select:nth-child(2) {
+  display: none !important;
+}
+.goog-te-gadget:nth-last-child() {
+  display: none !important;
+}
+.goog-te-gadget select {
+  width: 100% !important;
+  font-size: 14px !important;
+  height: 35px !important;
+  margin-top: 0px !important;
+  color: #000 !important;
+  border-radius: 40px !important;
+  background-color: #d9fe03 !important;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none !important;
+  height: 0px !important;
+}
+select:focus {
+  outline: none !important;
+}
+.goog-te-gadget .goog-te-combo {
+  margin: 0px !important;
+} */
